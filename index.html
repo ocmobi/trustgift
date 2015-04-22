@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+        <title>Trust Gift</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="phonegap.js"></script>
+
+        <script type="text/javascript">
+            //on device ready begin app
+            document.addEventListener("deviceready", onDeviceReady, false);
+
+            function onDeviceReady()
+            {
+                 //begin opening domain (hidden)
+                 var browser = cordova.InAppBrowser.open('http://trustgift.vn', '_blank', 'location=no,toolbar=no,hidden=no,zoom=no,hardwareback=yes');
+            }
+        </script>
+    </body>
+</html>
